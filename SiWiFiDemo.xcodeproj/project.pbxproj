@@ -1,0 +1,721 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2B069D9A21D4B0B6005F5A57 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B069D9921D4B0B6005F5A57 /* AppDelegate.m */; };
+		2B069D9D21D4B0B6005F5A57 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B069D9C21D4B0B6005F5A57 /* ViewController.m */; };
+		2B069DA021D4B0B7005F5A57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B069D9E21D4B0B7005F5A57 /* Main.storyboard */; };
+		2B069DA221D4B0BA005F5A57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B069DA121D4B0BA005F5A57 /* Assets.xcassets */; };
+		2B069DA521D4B0BA005F5A57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B069DA321D4B0BA005F5A57 /* LaunchScreen.storyboard */; };
+		2B069DA821D4B0BA005F5A57 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B069DA721D4B0BA005F5A57 /* main.m */; };
+		2B069DB221D4B0BA005F5A57 /* SiWiFiDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B069DB121D4B0BA005F5A57 /* SiWiFiDemoTests.m */; };
+		2B069DBD21D4B0BA005F5A57 /* SiWiFiDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B069DBC21D4B0BA005F5A57 /* SiWiFiDemoUITests.m */; };
+		A3855857E04645A8D24EC497 /* libPods-SiWiFiDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832CB99A9E304C0E69AA32DA /* libPods-SiWiFiDemo.a */; };
+		C7478BD922B90AA500EB6FD7 /* wifiSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7478BD822B90AA500EB6FD7 /* wifiSettingController.m */; };
+		C765095022BB1D43009FDD23 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = C765094E22BB1D42009FDD23 /* Reachability.m */; };
+		C77E7AD422F02A5C00788847 /* SiRouterApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C77E7AD322F02A5B00788847 /* SiRouterApi.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2B069DAE21D4B0BA005F5A57 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2B069D8D21D4B0B6005F5A57 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2B069D9421D4B0B6005F5A57;
+			remoteInfo = SiWiFiDemo;
+		};
+		2B069DB921D4B0BA005F5A57 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2B069D8D21D4B0B6005F5A57 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2B069D9421D4B0B6005F5A57;
+			remoteInfo = SiWiFiDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2B72FA5B21D74345005642A5 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2B069D9521D4B0B6005F5A57 /* SiWiFiDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SiWiFiDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B069D9821D4B0B6005F5A57 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2B069D9921D4B0B6005F5A57 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2B069D9B21D4B0B6005F5A57 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2B069D9C21D4B0B6005F5A57 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2B069D9F21D4B0B7005F5A57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2B069DA121D4B0BA005F5A57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2B069DA421D4B0BA005F5A57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2B069DA621D4B0BA005F5A57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B069DA721D4B0BA005F5A57 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2B069DAD21D4B0BA005F5A57 /* SiWiFiDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SiWiFiDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B069DB121D4B0BA005F5A57 /* SiWiFiDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SiWiFiDemoTests.m; sourceTree = "<group>"; };
+		2B069DB321D4B0BA005F5A57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B069DB821D4B0BA005F5A57 /* SiWiFiDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SiWiFiDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B069DBC21D4B0BA005F5A57 /* SiWiFiDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SiWiFiDemoUITests.m; sourceTree = "<group>"; };
+		2B069DBE21D4B0BA005F5A57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		518B791ADCF525EE48B1410E /* Pods-SiWiFiDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SiWiFiDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-SiWiFiDemo/Pods-SiWiFiDemo.release.xcconfig"; sourceTree = "<group>"; };
+		832CB99A9E304C0E69AA32DA /* libPods-SiWiFiDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SiWiFiDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BDF312F0774348DFE2DC2D8 /* Pods-SiWiFiDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SiWiFiDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SiWiFiDemo/Pods-SiWiFiDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		C7478BCC22B8BC1800EB6FD7 /* SiWiFiDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SiWiFiDemo.entitlements; sourceTree = "<group>"; };
+		C7478BD722B90A9000EB6FD7 /* wifiSettingController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = wifiSettingController.h; sourceTree = "<group>"; };
+		C7478BD822B90AA500EB6FD7 /* wifiSettingController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = wifiSettingController.m; sourceTree = "<group>"; };
+		C765094E22BB1D42009FDD23 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		C765094F22BB1D42009FDD23 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		C77E7AD322F02A5B00788847 /* SiRouterApi.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SiRouterApi.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2B069D9221D4B0B6005F5A57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C77E7AD422F02A5C00788847 /* SiRouterApi.framework in Frameworks */,
+				A3855857E04645A8D24EC497 /* libPods-SiWiFiDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B069DAA21D4B0BA005F5A57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B069DB521D4B0BA005F5A57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2B069D8C21D4B0B6005F5A57 = {
+			isa = PBXGroup;
+			children = (
+				C77E7AD322F02A5B00788847 /* SiRouterApi.framework */,
+				C765094F22BB1D42009FDD23 /* Reachability.h */,
+				C765094E22BB1D42009FDD23 /* Reachability.m */,
+				2B069D9721D4B0B6005F5A57 /* SiWiFiDemo */,
+				2B069DB021D4B0BA005F5A57 /* SiWiFiDemoTests */,
+				2B069DBB21D4B0BA005F5A57 /* SiWiFiDemoUITests */,
+				2B069D9621D4B0B6005F5A57 /* Products */,
+				2B069DCA21D4B233005F5A57 /* Frameworks */,
+				D27D3DCC785195186B6E89F6 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		2B069D9621D4B0B6005F5A57 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2B069D9521D4B0B6005F5A57 /* SiWiFiDemo.app */,
+				2B069DAD21D4B0BA005F5A57 /* SiWiFiDemoTests.xctest */,
+				2B069DB821D4B0BA005F5A57 /* SiWiFiDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2B069D9721D4B0B6005F5A57 /* SiWiFiDemo */ = {
+			isa = PBXGroup;
+			children = (
+				C7478BCC22B8BC1800EB6FD7 /* SiWiFiDemo.entitlements */,
+				2B069D9821D4B0B6005F5A57 /* AppDelegate.h */,
+				2B069D9921D4B0B6005F5A57 /* AppDelegate.m */,
+				2B069D9B21D4B0B6005F5A57 /* ViewController.h */,
+				2B069D9C21D4B0B6005F5A57 /* ViewController.m */,
+				C7478BD722B90A9000EB6FD7 /* wifiSettingController.h */,
+				C7478BD822B90AA500EB6FD7 /* wifiSettingController.m */,
+				2B069D9E21D4B0B7005F5A57 /* Main.storyboard */,
+				2B069DA121D4B0BA005F5A57 /* Assets.xcassets */,
+				2B069DA321D4B0BA005F5A57 /* LaunchScreen.storyboard */,
+				2B069DA621D4B0BA005F5A57 /* Info.plist */,
+				2B069DA721D4B0BA005F5A57 /* main.m */,
+			);
+			path = SiWiFiDemo;
+			sourceTree = "<group>";
+		};
+		2B069DB021D4B0BA005F5A57 /* SiWiFiDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				2B069DB121D4B0BA005F5A57 /* SiWiFiDemoTests.m */,
+				2B069DB321D4B0BA005F5A57 /* Info.plist */,
+			);
+			path = SiWiFiDemoTests;
+			sourceTree = "<group>";
+		};
+		2B069DBB21D4B0BA005F5A57 /* SiWiFiDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2B069DBC21D4B0BA005F5A57 /* SiWiFiDemoUITests.m */,
+				2B069DBE21D4B0BA005F5A57 /* Info.plist */,
+			);
+			path = SiWiFiDemoUITests;
+			sourceTree = "<group>";
+		};
+		2B069DCA21D4B233005F5A57 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				832CB99A9E304C0E69AA32DA /* libPods-SiWiFiDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D27D3DCC785195186B6E89F6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9BDF312F0774348DFE2DC2D8 /* Pods-SiWiFiDemo.debug.xcconfig */,
+				518B791ADCF525EE48B1410E /* Pods-SiWiFiDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2B069D9421D4B0B6005F5A57 /* SiWiFiDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B069DC121D4B0BA005F5A57 /* Build configuration list for PBXNativeTarget "SiWiFiDemo" */;
+			buildPhases = (
+				3A1526B8FEBD42CA8DDBAAB8 /* [CP] Check Pods Manifest.lock */,
+				2B069D9121D4B0B6005F5A57 /* Sources */,
+				2B069D9221D4B0B6005F5A57 /* Frameworks */,
+				2B069D9321D4B0B6005F5A57 /* Resources */,
+				2B72FA5B21D74345005642A5 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SiWiFiDemo;
+			productName = SiWiFiDemo;
+			productReference = 2B069D9521D4B0B6005F5A57 /* SiWiFiDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2B069DAC21D4B0BA005F5A57 /* SiWiFiDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B069DC421D4B0BA005F5A57 /* Build configuration list for PBXNativeTarget "SiWiFiDemoTests" */;
+			buildPhases = (
+				2B069DA921D4B0BA005F5A57 /* Sources */,
+				2B069DAA21D4B0BA005F5A57 /* Frameworks */,
+				2B069DAB21D4B0BA005F5A57 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2B069DAF21D4B0BA005F5A57 /* PBXTargetDependency */,
+			);
+			name = SiWiFiDemoTests;
+			productName = SiWiFiDemoTests;
+			productReference = 2B069DAD21D4B0BA005F5A57 /* SiWiFiDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2B069DB721D4B0BA005F5A57 /* SiWiFiDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B069DC721D4B0BA005F5A57 /* Build configuration list for PBXNativeTarget "SiWiFiDemoUITests" */;
+			buildPhases = (
+				2B069DB421D4B0BA005F5A57 /* Sources */,
+				2B069DB521D4B0BA005F5A57 /* Frameworks */,
+				2B069DB621D4B0BA005F5A57 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2B069DBA21D4B0BA005F5A57 /* PBXTargetDependency */,
+			);
+			name = SiWiFiDemoUITests;
+			productName = SiWiFiDemoUITests;
+			productReference = 2B069DB821D4B0BA005F5A57 /* SiWiFiDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2B069D8D21D4B0B6005F5A57 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = siflower;
+				TargetAttributes = {
+					2B069D9421D4B0B6005F5A57 = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.AccessWiFi = {
+								enabled = 1;
+							};
+						};
+					};
+					2B069DAC21D4B0BA005F5A57 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 2B069D9421D4B0B6005F5A57;
+					};
+					2B069DB721D4B0BA005F5A57 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 2B069D9421D4B0B6005F5A57;
+					};
+				};
+			};
+			buildConfigurationList = 2B069D9021D4B0B6005F5A57 /* Build configuration list for PBXProject "SiWiFiDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2B069D8C21D4B0B6005F5A57;
+			productRefGroup = 2B069D9621D4B0B6005F5A57 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2B069D9421D4B0B6005F5A57 /* SiWiFiDemo */,
+				2B069DAC21D4B0BA005F5A57 /* SiWiFiDemoTests */,
+				2B069DB721D4B0BA005F5A57 /* SiWiFiDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2B069D9321D4B0B6005F5A57 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B069DA521D4B0BA005F5A57 /* LaunchScreen.storyboard in Resources */,
+				2B069DA221D4B0BA005F5A57 /* Assets.xcassets in Resources */,
+				2B069DA021D4B0B7005F5A57 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B069DAB21D4B0BA005F5A57 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B069DB621D4B0BA005F5A57 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3A1526B8FEBD42CA8DDBAAB8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SiWiFiDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2B069D9121D4B0B6005F5A57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B069D9D21D4B0B6005F5A57 /* ViewController.m in Sources */,
+				2B069DA821D4B0BA005F5A57 /* main.m in Sources */,
+				2B069D9A21D4B0B6005F5A57 /* AppDelegate.m in Sources */,
+				C7478BD922B90AA500EB6FD7 /* wifiSettingController.m in Sources */,
+				C765095022BB1D43009FDD23 /* Reachability.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B069DA921D4B0BA005F5A57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B069DB221D4B0BA005F5A57 /* SiWiFiDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B069DB421D4B0BA005F5A57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B069DBD21D4B0BA005F5A57 /* SiWiFiDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2B069DAF21D4B0BA005F5A57 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2B069D9421D4B0B6005F5A57 /* SiWiFiDemo */;
+			targetProxy = 2B069DAE21D4B0BA005F5A57 /* PBXContainerItemProxy */;
+		};
+		2B069DBA21D4B0BA005F5A57 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2B069D9421D4B0B6005F5A57 /* SiWiFiDemo */;
+			targetProxy = 2B069DB921D4B0BA005F5A57 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2B069D9E21D4B0B7005F5A57 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2B069D9F21D4B0B7005F5A57 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+			usesTabs = 0;
+		};
+		2B069DA321D4B0BA005F5A57 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2B069DA421D4B0BA005F5A57 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2B069DBF21D4B0BA005F5A57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2B069DC021D4B0BA005F5A57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2B069DC221D4B0BA005F5A57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BDF312F0774348DFE2DC2D8 /* Pods-SiWiFiDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SiWiFiDemo/SiWiFiDemo.entitlements;
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LLBQFY68AL;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/SiWiFiDemo",
+				);
+				INFOPLIST_FILE = SiWiFiDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-l\"CXAlertView\"",
+					"-framework",
+					"\"Accelerate\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"SiRouterApi\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"$(inherited)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.siflower.SiWiFiDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 armv7s";
+			};
+			name = Debug;
+		};
+		2B069DC321D4B0BA005F5A57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 518B791ADCF525EE48B1410E /* Pods-SiWiFiDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SiWiFiDemo/SiWiFiDemo.entitlements;
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LLBQFY68AL;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/SiWiFiDemo",
+				);
+				INFOPLIST_FILE = SiWiFiDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-l\"CXAlertView\"",
+					"-framework",
+					"\"Accelerate\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"SiRouterApi\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"$(inherited)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.siflower.SiWiFiDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 armv7s";
+			};
+			name = Release;
+		};
+		2B069DC521D4B0BA005F5A57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LLBQFY68AL;
+				INFOPLIST_FILE = SiWiFiDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.siflower.SiWiFiDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SiWiFiDemo.app/SiWiFiDemo";
+			};
+			name = Debug;
+		};
+		2B069DC621D4B0BA005F5A57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LLBQFY68AL;
+				INFOPLIST_FILE = SiWiFiDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.siflower.SiWiFiDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SiWiFiDemo.app/SiWiFiDemo";
+			};
+			name = Release;
+		};
+		2B069DC821D4B0BA005F5A57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LLBQFY68AL;
+				INFOPLIST_FILE = SiWiFiDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.siflower.SiWiFiDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SiWiFiDemo;
+			};
+			name = Debug;
+		};
+		2B069DC921D4B0BA005F5A57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LLBQFY68AL;
+				INFOPLIST_FILE = SiWiFiDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.siflower.SiWiFiDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SiWiFiDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2B069D9021D4B0B6005F5A57 /* Build configuration list for PBXProject "SiWiFiDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B069DBF21D4B0BA005F5A57 /* Debug */,
+				2B069DC021D4B0BA005F5A57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B069DC121D4B0BA005F5A57 /* Build configuration list for PBXNativeTarget "SiWiFiDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B069DC221D4B0BA005F5A57 /* Debug */,
+				2B069DC321D4B0BA005F5A57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B069DC421D4B0BA005F5A57 /* Build configuration list for PBXNativeTarget "SiWiFiDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B069DC521D4B0BA005F5A57 /* Debug */,
+				2B069DC621D4B0BA005F5A57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B069DC721D4B0BA005F5A57 /* Build configuration list for PBXNativeTarget "SiWiFiDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B069DC821D4B0BA005F5A57 /* Debug */,
+				2B069DC921D4B0BA005F5A57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2B069D8D21D4B0B6005F5A57 /* Project object */;
+}
